@@ -5,42 +5,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample-3Dmodel</title>
-    <style>
-        .box {
-            width: 749px;
-            height: 749px;
-            margin: 24px auto;
-        }
-        
-        /* .model {
-            border: solid 2px black;
-        } */
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</script>
+
 </head>
 
-<body> 
-    <h1>３Dサンプル</h1>
+<body>
+    <h1 class="title">3D model</h1>
+    
+    <!--
+        ========== メモ ===========
+        こちらは <model-viewer> のサンプルです。
+        ==========================
+    <model-viewer 
+        class="model"  
+        src="shimadasama/3dmodel/shimada-light2.glb"  // 3Dモデルのパスを指定
+        camera-controls  // ユーザー操作を有効化
+        auto-rotate  // 自動回転を有効化
+        interaction-prompt="none"  // インタラクションプロンプト(指マーク)を非表示
+        rotation-per-second="30deg"  // 回転速度を指定
+        disable-pan // パン操作を無効化
+        environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">  // 環境マップと露出を指定(ライト効果)
+    </model-viewer>
+    -->
 
-    <div class="box box1">
-        <h2>ring</h2>
-        <model-viewer class="model" src="shimadasama/3dmodel/ring-gold.glb" camera-controls auto-rotate style="margin: 0 auto; width: 749px; height: 749px;"></model-viewer> 
-    </div>
-    <div class="box box2">
-        <h2>bangle-gold</h2>
-        <model-viewer class="model" src="shimadasama/3dmodel/bangle-gold.glb" camera-controls auto-rotate style="margin: 0 auto; width: 749px; height: 749px;"></model-viewer> 
-    </div>
-    <div class="box box3">
-        <h2>bangle-silver</h2>
-        <model-viewer class="model" src="shimadasama/3dmodel/bangle-thick-silver.glb" camera-controls auto-rotate style="margin: 0 auto; width: 749px; height: 749px;"></model-viewer> 
-    </div>
-    <div class="box box4">
-        <h2>bangle-black</h2>
-        <model-viewer class="model" src="shimadasama/3dmodel/bangle-black.glb" camera-controls auto-rotate style="margin: 0 auto; width: 749px; height: 749px;"></model-viewer> 
-    </div>
-    <!-- <div class="box box5">
-        <h2>bangle-silver</h2>
-        <model-viewer class="model" src="shimadasama/3dmodel/sample4-bangle-silver.glb" camera-controls auto-rotate style="margin: 0 auto; width: 749px; height: 749px;"></model-viewer> 
-    </div> -->
+    <section class="border-top">
+        <dl class="dl_flex">
+            <div class="dl_flex-item">
+                <dt>type：</dt>
+                <dd>bangle / light</dd>
+            </div>
+            <div class="dl_flex-item">
+                <dt>color：</dt>
+                <dd>yellow glod</dd>
+            </div>
+        </dl>
+        <div class="dmodel-view-box">
+            <div class="model-3d">
+                <model-viewer 
+                    class="model" 
+                    src="shimadasama/complate/bangleLight-yellowGold.glb" 
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    disable-pan
+                    environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">
+                </model-viewer>
+            </div>
+            <div class="product-img-box">
+                <img src="shimadasama/3dmodel/banglelightk.webp" alt="img" class="product-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-top">
+        <dl class="dl_flex">
+            <div class="dl_flex-item">
+                <dt>type：</dt>
+                <dd>bangle / light</dd>
+            </div>
+            <div class="dl_flex-item">
+                <dt>color：</dt>
+                <dd>silver</dd>
+            </div>
+        </dl>
+        <div class="dmodel-view-box">
+            <div class="model-3d">
+                <model-viewer 
+                    class="model" 
+                    src="shimadasama/3dmodel/light-silver.glb" 
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    disable-pan
+                    environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">
+                </model-viewer>
+            </div>
+            <div class="product-img-box">
+                <img src="shimadasama/3dmodel/light-silver.webp" alt="img" class="product-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-top">
+        <dl class="dl_flex">
+            <div class="dl_flex-item">
+                <dt>type：</dt>
+                <dd>bangle / light</dd>
+            </div>
+            <div class="dl_flex-item">
+                <dt>color：</dt>
+                <dd>bitter glod</dd>
+            </div>
+        </dl>
+        <div class="dmodel-view-box">
+            <div class="model-3d">
+                <model-viewer 
+                    class="model" 
+                    src="shimadasama/3dmodel/light-bitterGold.glb" 
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    disable-pan
+                    environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">
+                </model-viewer>
+            </div>
+            <div class="product-img-box">
+                <img src="shimadasama/3dmodel/bangle-bitterGold.webp" alt="img" class="product-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-top">
+        <dl class="dl_flex">
+            <div class="dl_flex-item">
+                <dt>type：</dt>
+                <dd>bangle / blod</dd>
+            </div>
+            <div class="dl_flex-item">
+                <dt>color：</dt>
+                <dd>yellow glod</dd>
+        </dl>
+        <div class="dmodel-view-box">
+            <div class="model-3d">
+                <model-viewer 
+                    class="model"
+                    src="shimadasama/3dmodel/shimada-bold.glb"
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    camera-orbit="0deg 75deg 10m"
+                    disable-pan
+                    environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">
+                </model-viewer>
+            </div>
+            <div class="product-img-box">
+                <img src="shimadasama/3dmodel/bangle-bold.webp" alt="img" class="product-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-top">
+        <dl class="dl_flex">
+            <div class="dl_flex-item">
+                <dt>type：</dt>
+                <dd>bangle / EXbold</dd>
+            </div>
+            <div class="dl_flex-item">
+                <dt>color：</dt>
+                <dd>yellow glod</dd>
+            </div>
+        </dl>
+        <div class="dmodel-view-box">
+            <div class="model-3d">
+                <model-viewer 
+                    class="model"
+                    src="shimadasama/3dmodel/shimada-EXbold.glb"
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    camera-orbit="0deg 75deg 10m"
+                    disable-pan
+                    environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">
+                </model-viewer>
+            </div>
+            <div class="product-img-box">
+                <img src="shimadasama/3dmodel/bangle-EXbold.webp" alt="img" class="product-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="border-top">
+        <dl class="dl_flex">
+            <div class="dl_flex-item">
+                <dt>type：</dt>
+                <dd>ring</dd>
+            </div>
+            <div class="dl_flex-item">
+                <dt>color：</dt>
+                <dd>yellow glod</dd>
+            </div>
+        </dl>
+        <div class="dmodel-view-box">
+            <div class="model-3d">
+                <model-viewer 
+                    class="model"
+                    src="shimadasama/3dmodel/shimada-ring.glb"
+                    camera-controls
+                    auto-rotate
+                    interaction-prompt="none"
+                    rotation-per-second="30deg"
+                    camera-orbit="0deg 75deg 10m"
+                    disable-pan
+                    environment-image="shimadasama/3dmodel/Untitled.hdr" exposure="2.5">
+                </model-viewer>
+            </div>
+            <div class="product-img-box">
+                <img src="shimadasama/3dmodel/samplering-gold.webp" alt="img" class="product-img">
+            </div>
+        </div>
+    </section>
+    
 </body>
+
 </html>
